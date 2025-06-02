@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie de Tableaux à Vendre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f8f8; }
+        header { background: #ffffff; color: #000000; padding: 20px 0; text-align: center; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 40px; }
+        .artwork { border-radius: 8px; box-shadow: 0 2px 8px rgba(255, 255, 255, 0.067); padding: 16px; text-align: center; }
+        .artwork img { width: 100%; height: 250px; object-fit: cover; }
+        .title { font-weight: bold; margin: 12px 0 6px; }
+        .price { color: #2a7a2a; font-size: 1.1em; margin-bottom: 10px; }
+        .buy-btn { background: #2a7a2a; color: #fff; border: none; padding: 8px 18px; border-radius: 4px; cursor: pointer; }
+        .buy-btn:hover { background: #256622; }
+        main { padding: 20px; }
+        .commander { background: none; border-radius: none; };
+        @media (max-width: 800px) {
+            .gallery { padding: 20px; }
+            .artwork img { height: 200px; }
+        }
+        @media (max-width: 600px) {
+            .gallery { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galerie de Tableaux à Vendre</h1>
+        <p>Découvrez et achetez nos 25 œuvres uniques</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <!-- 25 tableaux -->
+            <!-- Remplacez les liens d'image par vos propres images -->
+            <!-- Exemple de tableau -->
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1011/400/300" alt="Tableau 1">
+                <div class="title">Tableau 1</div>
+                <button class="commander">120 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1012/400/300" alt="Tableau 2">
+                <div class="title">Tableau 2</div>
+                <button class="commander">150 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1013/400/300" alt="Tableau 3">
+                <div class="title">Tableau 3</div>
+                <button class="commander">180 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1014/400/300" alt="Tableau 4">
+                <div class="title">Tableau 4</div>
+                <button class="commander">200 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1015/400/300" alt="Tableau 5">
+                <div class="title">Tableau 5</div>
+                <button class="commander">170 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1016/400/300" alt="Tableau 6">
+                <div class="title">Tableau 6</div>
+                <button class="commander">130 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1018/400/300" alt="Tableau 7">
+                <div class="title">Tableau 7</div>
+                <button class="commander">160 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1019/400/300" alt="Tableau 8">
+                <div class="title">Tableau 8</div>
+                <button class="commander">140 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1020/400/300" alt="Tableau 9">
+                <div class="title">Tableau 9</div>
+                <button class="commander">155 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1021/400/300" alt="Tableau 10">
+                <div class="title">Tableau 10</div>
+                <button class="commander">210 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1022/400/300" alt="Tableau 11">
+                <div class="title">Tableau 11</div>
+                <button class="commander">190 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1023/400/300" alt="Tableau 12">
+                <div class="title">Tableau 12</div>
+                <button class="commander">175 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1024/400/300" alt="Tableau 13">
+                <div class="title">Tableau 13</div>
+                <button class="commander">160 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1025/400/300" alt="Tableau 14">
+                <div class="title">Tableau 14</div>
+                <button class="commander">185 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1026/400/300" alt="Tableau 15">
+                <div class="title">Tableau 15</div>
+                <button class="commander">195 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1027/400/300" alt="Tableau 16">
+                <div class="title">Tableau 16</div>
+                <button class="commander">170 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1028/400/300" alt="Tableau 17">
+                <div class="title">Tableau 17</div>
+                <button class="commander">150 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1029/400/300" alt="Tableau 18">
+                <div class="title">Tableau 18</div>
+                <button class="commander">180 €</button>
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1030/400/300" alt="Tableau 19">
+                <div class="title">Tableau 19</div>
+                <button class="commander">210 €</button>
+
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1031/400/300" alt="Tableau 20">
+                <div class="title">Tableau 20</div>
+                <button class="commander">200 €</button>
+
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1032/400/300" alt="Tableau 21">
+                <div class="title">Tableau 21</div>
+                <button class="commander">160 €</button>
+
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1033/400/300" alt="Tableau 22">
+                <div class="title">Tableau 22</div>
+                <button class="commander">175 €</button>
+
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1035/400/300" alt="Tableau 23">
+                <div class="title">Tableau 23</div>
+                <button class="commander">185 €</button>
+
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1036/400/300" alt="Tableau 24">
+                <div class="title">Tableau 24</div>
+                <button class="commander">190 €</button>
+                
+            </div>
+            <div class="artwork">
+                <img src="https://picsum.photos/id/1037/400/300" alt="Tableau 25">
+                <div class="title">Tableau 25</div>
+                <button class="commander">200 €</button>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
