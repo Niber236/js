@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Galerie de Tableaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f8f8; color: #333; }
+        header { background: #ffffff; padding: 20px 0; text-align: center; }
+        header h1 { margin: 0; }
+        main { max-width: 800px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+        section { margin-bottom: 30px; }
+        h2 { color: #2a7a2a; margin-bottom: 10px; }
+        p, li { line-height: 1.6; }
+        ul { padding-left: 20px; }
+        .contact-form { margin-top: 20px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #2a7a2a; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #256622; }
+        footer { text-align: center; padding: 20px; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+        <p>Pour toute information ou commande, n'hésitez pas à nous écrire.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Coordonnées</h2>
+            <ul>
+                <li><strong>Adresse :</strong> 123 Rue de l'Art, 75000 Paris, France</li>
+                <li><strong>Téléphone :</strong> +33 6 12 34 56 78</li>
+                <li><strong>Email :</strong> contact@galerie-tableaux.fr</li>
+            </ul>
+        </section>
+        <section class="contact-form">
+            <h2>Formulaire de Contact</h2>
+            <form action="#" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Galerie de Tableaux - Tous droits réservés
+    </footer>
+</body>
+</html>
