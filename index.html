@@ -44,6 +44,8 @@
         <p>Découvrez et achetez nos 25 œuvres uniques</p>
     </header>
     <main>
+      
+</section>
         <div class="gallery">
             <!-- 25 tableaux -->
             <!-- Remplacez les liens d'image par vos propres images -->
@@ -182,5 +184,34 @@
             </div>
         </div>
     </main>
+    <script>
+    const panier = [];
+
+    // Récupère tous les boutons de commande
+    const boutonsCommander = document.querySelectorAll('.commander');
+
+    boutonsCommander.forEach((bouton, index) => {
+        bouton.addEventListener('click', () => {
+            const titre = bouton.parentElement.querySelector('.title').textContent;
+            const prix = bouton.textContent;
+
+            panier.push({ titre, prix });
+
+            // Mise à jour de l'affichage
+            afficherPanier();
+        });
+    });
+
+    function afficherPanier() {
+        const listePanier = document.getElementById('panier-list');
+        listePanier.innerHTML = ''; // Vider d'abord
+
+        panier.forEach((item, i) => {
+            const li = document.createElement('li');
+            li.textContent = `${item.titre} - ${item.prix}`;
+            listePanier.appendChild(li);
+        });
+    }
+</script>
 </body>
 </html>
